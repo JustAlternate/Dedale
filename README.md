@@ -7,4 +7,4 @@ Dedale est un jeu de labyrinthe écrit en python avec la librarie pygame
 
 Dans Dedale vous pouvez choisir de jouer normalement dans un labyrinthe simple de 15x10
 
-https://github.com/JustAlternate/Dedale/blob/main/screenshot/Normal.png
+![Normal_Play](screenshot/Normal.png)
