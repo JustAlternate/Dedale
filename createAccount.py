@@ -3,9 +3,7 @@ from button import *
 from network import *
 from random import randint
 
-def createAccount(pygame,screen,name,password):
-    n = Network()
-
+def createAccount(pygame,screen,name,password,n):
     screen_size = pygame.display.Info()
     widht = screen_size.current_w
     height = screen_size.current_h
@@ -16,7 +14,7 @@ def createAccount(pygame,screen,name,password):
 
     splashs = ["Eliott", "BricoBricard", "Un homme de Dieu", "J'ai menti !","Barbossa","std::cout<<\"Pire language\"<<std::endl;","Ya moyen.. dans.. 2.. semaines..","Minecraft reference !", "ALED !", "Python !", "Base maink :O",
                "Le rasoir d'Ockham", "Sub 30 pain italien svp", "pile(), depile()", "for i in range(n):","Time to Slay !", "Splash text", "SpeedyBoi", "JESUSS!!!","RespectMyQiyana",
-               "Atchoummm", "JustAlternate.pw", "La Bro Lounge", "Pingu", "Hey !", "Welcome Back", "Crewmate again","Impostor ?", "Dattebayo", "Jiraya :')", "Hokage !", "Ultra vomit !",
+               "Atchoummm", "JustAlternate.fr", "La Bro Lounge", "Pingu", "Hey !", "Welcome Back", "Crewmate again","Impostor ?", "Dattebayo", "Jiraya :')", "Hokage !", "Ultra vomit !",
                "Skyyart 257.5 IQ !", "Pouah !", "Sardoche notre prophete", "Crazy Frog", "Bonjour","open mid ff15", "J'ai buy une AWP!", "RASENGAN!!!", "KAKAROTO", "Goku super sayan divin+++","Kammisam",
                "je suis content", "MAIS C'ETAIT SUR ENFAIT!!!", "G2 18 minutes", "MAIS NAN!", "MP2I !","Doscord !","https://discord.gg/xE8At9SgkE", "Canals", "CHECK MATE !", "Technique de la derivée 2nd",
                "La blague du mec au bec de cannard","Bah Yes","Chipie1007","Dédale BETA !","Le dormeur","Descend dans le bowl","H@ck3rman",
@@ -119,10 +117,10 @@ def createAccount(pygame,screen,name,password):
                     if event.key == pygame.K_RETURN:  # valider avec la touche Entrée
                         if name==None:
                             name = user_text
-                            createAccount(pygame,screen,name,None)
+                            createAccount(pygame,screen,name,None,n)
                         else:
                             password = user_text
-                            createAccount(pygame,screen,name,password)
+                            createAccount(pygame,screen,name,password,n)
 
                     elif event.key == pygame.K_BACKSPACE:  # enlever un caractere
                         user_text = user_text[:-1]
@@ -132,17 +130,17 @@ def createAccount(pygame,screen,name,password):
                         user_text+=event.unicode
 
 
-            if boxActive: color = color_active
+        if boxActive: color = color_active
 
-            pygame.draw.rect(screen, color, input_rect, 2)  # 2 = l'épaisseur du bord
+        pygame.draw.rect(screen, color, input_rect, 2)  # 2 = l'épaisseur du bord
 
-            if name!=None:text_surface = base_font.render(len(user_text)*'*', True, (255, 255, 255))  # 255 255 255 = couleur du text
-            else:text_surface = base_font.render(user_text, True, (255, 255, 255))  # 255 255 255 = couleur du text
-            screen.fill(color, input_rect)
-            screen.blit(text_surface, (input_rect.x + 5, input_rect.y + 5))  # le cadre
+        if name!=None:text_surface = base_font.render(len(user_text)*'*', True, (255, 255, 255))  # 255 255 255 = couleur du text
+        else:text_surface = base_font.render(user_text, True, (255, 255, 255))  # 255 255 255 = couleur du text
+        screen.fill(color, input_rect)
+        screen.blit(text_surface, (input_rect.x + 5, input_rect.y + 5))  # le cadre
 
-            pygame.display.flip()
-            clock.tick(60)  # les fps (delay de rafraichissement de la fenetre)
+        pygame.display.flip()
+        clock.tick(60)  # les fps (delay de rafraichissement de la fenetre)
 
     if password!=None and launched:
         try:

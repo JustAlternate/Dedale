@@ -33,9 +33,9 @@ def menu_Maze():
     try:
         f=open("infos.txt","r")
         if f.readline()==None:
-            createAccount(pygame,screen,None,None)
+            createAccount(pygame,screen,None,None,n)
         f.close()
-    except:createAccount(pygame,screen,None,None)
+    except:createAccount(pygame,screen,None,None,n)
 
     pygame.mixer.music.load("songs/Motivated.mp3")
     pygame.mixer.music.play()
