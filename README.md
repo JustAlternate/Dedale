@@ -42,7 +42,7 @@ le boss envoie sur les cases du labyrinthe !
 Une fois que vous avez atteint le niveau 5 pour la premiere fois, vous gagnez la possibilité d'accéder a des options "bonus".  
 
 - Le tableau des scores detailés.
-- La possibilité de s'entrainer sur des niveau que vous avez déjà réussi.
+- La possibilité de s'entrainer sur des niveaux que vous avez déjà réussi.
 - Changer de skin.
 - Pouvoir envoyer un message au développeurs.
 - Pouvoir personnaliser votre propre niveau.
