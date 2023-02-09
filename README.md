@@ -32,13 +32,14 @@ Dans ce mode, vous pourrez aussi vous mesurer au autre joueurs grace a la prése
 ## Boss tout les 5 niveaux
 
 A chaque palier de 5 niveau, un boss apparaitra.    
-Attention dans ce niveau le but est d'esquiver les missiles rouge que le boss envoie sur les cases du labyrinthe !  
+Attention dans ce niveau le but est d'esquiver les missiles rouge que 
+le boss envoie sur les cases du labyrinthe !  
 
 ![Boss_stage](screenshot/boss.png)
 
 ## Bonus (SPOIL)
 
-Une fois que vous avez atteint le niveau 5 pour la premiere fois, vous gangez la possibilité d'accéder a des options "bonus".  
+Une fois que vous avez atteint le niveau 5 pour la premiere fois, vous gagnez la possibilité d'accéder a des options "bonus".  
 
 - Le tableau des scores detailés.
 - La possibilité de s'entrainer sur des niveau que vous avez déjà réussi.
