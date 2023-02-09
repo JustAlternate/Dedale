@@ -1,4 +1,4 @@
-# Dedale
+# Dedale (2021-2022)
 ## Python Labyrinthe avec pygame
 
 Dedale est un jeu créé par Lavoilotte Ethan & Weber Loïc pour leur projet en Informatique de **terminale**.
@@ -24,6 +24,24 @@ Dans ce mode, vous pourrez aussi vous mesurer au autre joueurs grace a la prése
 
 ![Mode Aventure](screenshot/Adventure.png)
 ![Mode Aventure2](screenshot/Adventure2.png)
+
+## Comment jouer
+
+- Windows : Utiliser le .exe disponible ici : JustAlternate.fr/Dedale/
+- GNU/Linux : 
+
+Pré-requis : python3, git, de la chance
+
+```
+git clone https://github.com/JustAlternate/Dedale
+cd Dedale
+pip3 install pygame socket pickle mysql
+python3 menuMaze.py
+```
+
+Si cela ne marche pas, utiliser wine avec le .exe, sinon contacter moi.
+ATTENTION s'il vous plait ne modifier pas le code, notamment pour tricher, sinon je devrais reset le tableau des scores manuellment :'(.
+
 
 ---
 **ATTENTION SPOIL**
