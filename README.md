@@ -35,7 +35,7 @@ Pré-requis : python3, git, de la chance
 ```
 git clone https://github.com/JustAlternate/Dedale
 cd Dedale
-pip3 install pygame socket pickle mysql
+pip3 install pygame socket pickle mysql mysql-connector
 python3 menuMaze.py
 ```
 
